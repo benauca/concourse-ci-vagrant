@@ -1,0 +1,6 @@
+[submodule "formulas/docker-formula"]
+	path = formulas/docker-formula
+	url = https://github.com/saltstack-formulas/docker-formula.git
+[submodule "formulas/concourse-ci-formula"]
+	path = formulas/concourse-ci-formula
+	url = https://github.com/marco-m/concourse-ci-formula.git

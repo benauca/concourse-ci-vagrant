@@ -1,0 +1,17 @@
+# salt masterless setup: look for files locally (do not ask the saltmaster)
+file_client: local
+
+## Where the salt states & files are located
+file_roots:
+  base:
+    - /vagrant/saltstack/salt
+    - /vagrant
+    # The base for the concourse-ci formula
+    - /vagrant/formulas/concourse-ci-formula
+    # The base for docker formula
+    - /vagrant/formulas/docker-formula
+
+## Where the pillar data is located
+pillar_roots:
+  base:
+    - /vagrant/saltstack/pillar
